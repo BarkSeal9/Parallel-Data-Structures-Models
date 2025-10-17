@@ -84,6 +84,8 @@ The model parameters for *\*_x3_Part\_** are:
 * **Qe_n** -- the work stealing end of deque **De_n** (a queue);
 * **s** -- the part of memory that contains combined work stealing queue **Qe** (**Qe_1**+**Qe_2**+**Qe_3**) and working end **Sk_1**;
 * **m-s** -- the part of memory that contains working ends **Sk_2** and **Sk_3**;
+* **d** (in *\*_d.py*) -- the part of memory that contains working end **Sk_2**;
+* **m-s-d** (in *\*_d.py*) -- the part of memory that contains working end **Sk_3**;
 * **p_n** -- probability of insertion in **Sk_n**;
 * **q_n** -- probability of deletion from **Sk_n**;
 * **w_n** -- probability of stealing from **Qe**;
@@ -112,6 +114,9 @@ Simulation model of three deques (work stealing of one element). Problem of memo
 
 **Sim_WS_1_x3_Part_(par).py**
 Simulation model of three deques (work stealing of one element). Problem of memory partition: finding the optimal value of **s**. (A parallel program.)
+
+**Sim_WS_1_x3_Part_d.py**
+Simulation model of three deques (work stealing of one element). Problem of memory partition: finding the optimal values of **s** and **d**.
 
 ## Author
 
